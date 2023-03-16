@@ -4,7 +4,7 @@ import { View, Text } from "react-native";
 function Title() {
   return (
     <View>
-      <Text>BEHEALTH</Text>
+      <Text>BEHEALTH!</Text>
     </View>
   )
 }
