@@ -9,21 +9,19 @@ function ResultImc({ resultImc, messageResultImc}) {
       message: `Meu IMC é ${resultImc}`,
     })
   }
-
+  
   return (
-    <View style={styles.resultImc}>
+    <View style={styles.contextImc}>
       <View style={styles.boxShareButton}>
-        { resultImc &&
+        <Text style={styles.information}>{ messageResultImc }</Text>
+        <Text style={styles.numberImc}>{ resultImc }</Text>
         <TouchableOpacity
           style={styles.share}
           onPress={onShare}
         >
           <Text style={styles.sharedText}>Share</Text>
         </TouchableOpacity>
-        }
       </View>
-      <Text style={styles.information}>{ messageResultImc }</Text>
-      <Text style={styles.numberImc}>{ resultImc }</Text>
     </View>
   )
 }
