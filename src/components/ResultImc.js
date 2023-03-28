@@ -6,7 +6,7 @@ function ResultImc({ resultImc, messageResultImc}) {
   
   const onShare = async () => {
     await Share.share({
-      message: `Meu IMC é ${resultImc}`,
+      message: `Meu IMC ${resultImc}`,
     })
   }
   
